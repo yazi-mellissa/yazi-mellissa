@@ -65,8 +65,8 @@ A100 nodes, CUDA, MPI, OpenMP, Pthreads, CMake, C and C++. Long jobs run on the 
 **Training and post-training.** PyTorch, TRL, Unsloth, PEFT and LoRA, bitsandbytes 4-bit, vLLM,
 Accelerate, Ray, Weights & Biases.
 
-**Search and tuning.** Optuna, W&B sweeps, grid and random search; genetic algorithms, simulated
-annealing, tabu search, hyper-heuristics, and MAP-Elites style quality-diversity search.
+**Search and tuning.** Optuna for hyperparameter studies; genetic algorithms, simulated annealing,
+tabu search and hyper-heuristics; MAP-Elites style quality-diversity search.
 
 **Formal methods and compilers.** Z3 and SMT-based equivalence checking, e-graphs and equality
 saturation, Microsoft SEAL (BFV), MCP tool servers.
