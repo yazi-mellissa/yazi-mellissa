@@ -35,10 +35,13 @@ the real objective. Not part of the submitted paper.
 
 ## Engineering
 
-**[SkillGPT](https://github.com/yazi-mellissa/SkillGPT)**, built during professional work. A
+**[SkillGPT](https://github.com/yazi-mellissa/SkillGPT)**, built at RDSI with Khaled Benmachiche. A
 FastAPI service that extracts skills from free text through three interchangeable backends: vector
 search over Milvus/Zilliz, OpenAI, and Google Gemini, with response caching. Dockerised, with a
 layered `api` / `services` / `core` structure and configuration kept entirely in the environment.
+It ships a benchmark that measures the three against each other on 30 annotated queries,
+reporting precision and recall separately because a vector index and a language model fail in
+opposite directions.
 
 ## Projects
 
@@ -47,10 +50,11 @@ layered `api` / `services` / `core` structure and configuration kept entirely in
 | [3d-heat-diffusion](https://github.com/yazi-mellissa/3d-heat-diffusion) | A 3D heat diffusion solver (7-point Jacobi stencil, Dirichlet boundaries) written six times over: serial C, Pthreads, OpenMP, MPI, MPI+OpenMP hybrid, and CUDA in a naive and an optimized version. With a scaling study across all six. |
 | [gan-precision-recall](https://github.com/yazi-mellissa/gan-precision-recall) | Where a capacity-constrained GAN loses fidelity, where it loses mode coverage, and which intervention fixes which. 235 configurations evaluated under a frozen architecture. |
 | [collaborative-filtering-bfm](https://github.com/yazi-mellissa/collaborative-filtering-bfm) | Six method families compared under a protocol fixed before the first experiment. The final model is a Bayesian factorization machine with side information. |
-| [Intelligent_Irrigation_System](https://github.com/yazi-mellissa/Intelligent_Irrigation_System) | A DQN irrigation policy with an economic reward, trained against DSSAT crop simulations, with LSTM forecasters of soil moisture and yield (Algerian Sahara). |
+| [Intelligent_Irrigation_System](https://github.com/yazi-mellissa/Intelligent_Irrigation_System) | A DQN irrigation policy for the Algerian Sahara, trained against DSSAT crop simulations through two LSTM forecasters, served behind a FastAPI endpoint. The soil-water model reaches R² 0.838; the yield model it feeds reaches −0.285, and the README explains why that bounds what the agent's reward can mean. |
 | [graph-coloring-hyperheuristics](https://github.com/yazi-mellissa/graph-coloring-hyperheuristics) | Learned GNN vertex orderings against a genetic algorithm evolving heuristics, on DIMACS instances. |
-| [Breast_Cancer_Data_Analysis](https://github.com/yazi-mellissa/Breast_Cancer_Data_Analysis) | A clinical-data study on 4,026 breast cancer patients: PCA and MCA, patient clustering by survival risk, and which variables actually predict mortality. |
+| [Breast_Cancer_Data_Analysis](https://github.com/yazi-mellissa/Breast_Cancer_Data_Analysis) | A clinical study on 4,024 SEER breast cancer patients. PCA and MCA, three clusters whose mortality runs 9.4% to 37.5%, and a demonstration that most of the headline accuracy on this dataset comes from a leaking column and from an 85% majority class. |
 | [open5gs-k8s](https://github.com/yazi-mellissa/open5gs-k8s) | A private 5G core on Kubernetes, with UPF placement for low-latency services. |
+| [sms-mqtt-gateway](https://github.com/yazi-mellissa/sms-mqtt-gateway) | Turns an MQTT message into an SMS through a GSM modem, so reminders reach a phone with no data coverage. Built with Khaled Benmachiche. |
 
 ## Background
 
